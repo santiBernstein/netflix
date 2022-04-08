@@ -7,7 +7,7 @@
 body {
     background-color: black;
     color: white;
-    background-image: url('assets/images/fondoPeliculas.jpg');
+    background: url('assets/images/fondoPeliculas.jpg') no-repeat center center/cover;
     font-size: 16px;
 }
 
@@ -73,12 +73,64 @@ ul {
 /* center options*/
 
 .center-options {
-    width: 100%;
-    
+    width: 100%;    
     height: 200px;
     margin-top: 140px;
 }
 
 .center-brand {
     width: 80px;
+    margin-left: 13px;
 }
+
+.play-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.play-menu ul {
+    display: flex;
+    font-family: Helvetica;
+}
+.play-menu ul.nav-play {
+    padding-left: initial;
+        
+}
+.play-menu ul li {
+    padding: 10px;
+}
+
+.play-menu ul.nav-play li a {
+    padding: 7px;
+    background-color: rgba(109, 109, 110, 0.7);
+    border: 0px;
+    border-radius: 4px;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 13px;
+} 
+.play-menu ul.nav-play li a:hover {
+    background-color: rgba(181, 181, 187, 0.7);
+}
+
+/* center right options */
+
+.play-menu ul.nav-play-right {
+    background-color: aqua;
+}
+
+.play-menu ul.nav-play-right li {
+    padding: 5px
+}
+.play-menu ul.nav-play-right li a {
+    background-color: black;
+}
+.play-menu ul.nav-play-right li a p {
+    border: solid 3px #dcdcdc;
+    border-style: none none none solid;
+    background-color: rgba(51,51,51,.6);
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+
