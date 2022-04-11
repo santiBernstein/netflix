@@ -1,4 +1,4 @@
-. {
+. { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -70,6 +70,16 @@ ul {
     padding: 5px
 }
 
+/* button nav */
+
+.media-menu {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 20px;
+    
+}
+
 /* center options*/
 
 .center-options {
@@ -91,6 +101,8 @@ ul {
 .play-menu ul {
     display: flex;
     font-family: Helvetica;
+    align-items:center;
+
 }
 .play-menu ul.nav-play {
     padding-left: initial;
@@ -107,7 +119,7 @@ ul {
     border-radius: 4px;
     opacity: 1;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
 } 
 .play-menu ul.nav-play li a:hover {
     background-color: rgba(181, 181, 187, 0.7);
@@ -116,14 +128,15 @@ ul {
 /* center right options */
 
 .play-menu ul.nav-play-right {
-    background-color: aqua;
+    
 }
 
 .play-menu ul.nav-play-right li {
     padding: 5px
 }
 .play-menu ul.nav-play-right li a {
-    background-color: black;
+    font-size: 18px;
+
 }
 .play-menu ul.nav-play-right li a p {
     border: solid 3px #dcdcdc;
@@ -131,6 +144,44 @@ ul {
     background-color: rgba(51,51,51,.6);
     padding-right: 20px;
     padding-left: 5px;
+}
+
+/* carousel */
+
+.carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 180px;
+}
+
+@media (max-width: 700px){
+
+    .media-menu {
+        display:;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #626b77;
+        opacity: .9;
+        transform: translateX(-400px);
+    }
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .carousel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
