@@ -76,7 +76,12 @@ ul {
     position: absolute;
     top: 15px;
     left: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    left: 45%;
+    background: fixed;
+    top: 5%;
+    border: 0px;
+    visibility: hidden;
     
 }
 
@@ -159,10 +164,12 @@ ul {
     height: 180px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
 
     .media-menu {
-        display:;
+        visibility: visible;
+        padding-top: 15px;
+
     }
 
     .nav-main ul.nav-menu {
@@ -184,4 +191,26 @@ ul {
 
 }
 
+@media (max-width: 425px){
 
+     .nav-main ul {
+        
+
+     }
+     .center-brand {
+         visibility: hidden;
+     }
+     .play-menu {
+         flex-direction: column;
+     }
+     .play-menu ul.nav-play-right {
+         padding-left: 5px;
+         padding-right: 5px;
+         margin-top: 0;
+     }
+     
+     .carousel {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+}
