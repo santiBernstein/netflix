@@ -7,7 +7,8 @@
 body {
     background-color: black;
     color: white;
-    background: url('assets/images/fondoPeliculas.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 16px;
 }
 
@@ -153,15 +154,14 @@ ul {
 
 /* carousel */
 
-.carousel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-}
+/*.glider-img {
+    display:inline-block;
+}*/
 
-.carousel img {
+.glider-item .glider-img{
+    display: block;
     width: 100%;
-    height: 180px;
+    height: 100%;
 }
 
 @media (max-width: 768px){
@@ -185,7 +185,7 @@ ul {
         transform: translateX(-20px);
     }
 
-    .carousel {
+    .container-main {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -209,7 +209,7 @@ ul {
          margin-top: 0;
      }
      
-     .carousel {
+     .container-main {
          grid-template-columns: repeat(1, 1fr);
      }
 
